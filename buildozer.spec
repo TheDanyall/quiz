@@ -16,13 +16,19 @@ source.main = main.py
 requirements = python3,kivy
 python.version = 3.8
 
-# تنظیمات اندروید (حداقل)
-android.minapi = 21  # حداقل نسخه اندروید
+# تنظیمات اندروید
+android.minapi = 21
+android.sdk = 31
+android.skip_update = False
+android.accept_sdk_license = True
+android.arch = armeabi-v7a
 android.permissions = INTERNET
 
 # تنظیمات عمومی
 orientation = portrait
 fullscreen = 0
+log_level = 2
 
+# تنظیمات buildozer
 [buildozer]
 log_level = 2
